@@ -1,19 +1,26 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lets play !</title>
+    <title>Let's Play!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Choose <span id="computer-choice"></span></h1>
-    <h2>Your choice ! <span id="user-choice"></span></h2>
-    <h2>Result : <span id="result"></span></h2>
-    <input type="radio" id="rock" name="choice" value="rock">
-    <label for="rock">Rock</label><br>
-    <input type="radio" id="paper" name="choice" value="paper">
-    <label for="paper">Paper</label>
-    <input type="radio" id="scissors" name="choice" value="scissors">
-    <label for="scissors">Scissors</label>
-    <button id="play" disabled>Play</button>
+    <div class="container">
+        <h1>Computer's choice: <span id="computer-choice"></span></h1>
+        <h2>Your choice: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+        <div class="choices">
+            <input type="radio" id="rock" name="choice" value="rock">
+            <label for="rock" class="choice">Rock</label>
+            <input type="radio" id="paper" name="choice" value="paper">
+            <label for="paper" class="choice">Paper</label>
+            <input type="radio" id="scissors" name="choice" value="scissors">
+            <label for="scissors" class="choice">Scissors</label>
+        </div>
+        <button id="play" disabled>Play</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
